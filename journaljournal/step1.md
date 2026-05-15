@@ -23,6 +23,84 @@ Based on this decision, it will call the appropriate tool.
 
 ## 3. Tools to be Used
 
+# Step 3 – Testing, Deployment, and Data Handling
+
+## Testing Process
+Testing was performed during development to ensure all components work correctly. 
+Both individual modules and the full system were tested.
+
+Methods used:
+- Manual testing
+- Functional testing
+- Tool testing
+- Error handling testing
+
+---
+
+## Test Scenarios
+
+### 1. Normal Input
+Input: Valid user request  
+Expected: Correct output using tools  
+
+### 2. Tool Testing
+Input: Direct tool usage  
+Expected: Accurate results  
+
+### 3. Invalid Input
+Input: Incorrect user input  
+Expected: Error message, no crash  
+
+### 4. Edge Cases
+Input: Empty or extreme values  
+Expected: Safe handling  
+
+### 5. Workflow Test
+Input: Full task  
+Expected: Correct multi-step execution  
+
+---
+
+## Deployment Preparation
+
+Steps to run:
+
+1. Install dependencies:
+pip install -r requirements.txt
+
+2. Run program:
+python main.py
+
+Project includes:
+- Source code
+- Tools
+- Tests
+- README
+
+---
+
+## Data Conversion
+
+System flow:
+User input → parsed → agent → tool → formatted output
+
+Examples:
+- String → structured command
+- Tool result → readable output
+
+---
+
+## Deployment Strategy
+
+Current: Local CLI application
+
+Future:
+- Web app (Flask/FastAPI)
+- API service
+
+Strategy:
+- Local testing → controlled release → deployment
+
 - Calculator tool (for math operations)  
 - Search tool (for information retrieval)  
 - File reader (optional for later extension)  
